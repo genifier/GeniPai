@@ -1,0 +1,13 @@
+/* 버튼 기본 */
+.btn{
+    display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+    border-radius:999px;border:1px solid transparent;padding:.7rem 1.1rem;
+    font-weight:600;line-height:1;cursor:pointer;transition:.18s ease;
+}
+.btn:disabled{opacity:.6;cursor:not-allowed}
+
+/* 버튼 변형 */
+.btn--primary{background:var(--primary);color:#fff}
+.btn--primary:hover{background:var(--primary-600)}
+.btn--outline{background:#fff;border-color:var(--border);color:var(--ink)}
+.btn--outline:hover{border-color:#cbd5e1;background:#f8fafc}

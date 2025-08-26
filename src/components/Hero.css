@@ -1,0 +1,57 @@
+/* 히어로 */
+.hero{padding:56px 0 72px}
+.grid{
+  display:grid;gap:32px;
+  grid-template-columns: 1.1fr .9fr;
+}
+@media (max-width: 960px){
+  .grid{grid-template-columns:1fr}
+}
+.h1{
+  font-size: clamp(32px, 4.8vw, 60px);
+  line-height:1.1;margin:0 0 12px;
+  font-weight:800;letter-spacing:-.02em;
+}
+.h1 .accent{
+  background: linear-gradient(90deg, var(--primary) 10%, #7c3aed 60%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+}
+.lead{font-size:18px;color:var(--muted);margin:0 0 28px}
+
+/* 카드 */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media (max-width: 960px){.cards{grid-template-columns:1fr 1fr}}
+@media (max-width: 640px){.cards{grid-template-columns:1fr}}
+.card{
+  background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+  box-shadow:var(--shadow);padding:18px 16px;min-height:120px;
+}
+.card h4{margin:0 0 6px;font-size:15px}
+.card p{margin:0;color:#64748b;font-size:14px}
+
+/* 폰 목업 */
+.phone{
+  width:min(420px, 90vw);justify-self:end;align-self:start;
+  aspect-ratio: 9/14;border-radius:40px;border:10px solid #1f2937;
+  border-bottom: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  background:#0b1220;box-shadow:0 20px 60px rgba(2,6,23,.25);position:relative;overflow:hidden;
+}
+@media (max-width:960px){.phone{justify-self:center}}
+.phone__screen{
+  position:absolute;inset:8px;border-radius:30px;background:#f8fafc;padding:18px 14px;overflow:auto;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  bottom: 0px;
+}
+.bubble{
+  background:#fff;border:1px solid var(--border);border-radius:14px;padding:10px 12px;margin:8px 0;font-size:14px;
+  width: 80%;
+  margin-left: 20%;
+}
+.bubble--ai{
+  background:#eef2ff;border-color:#e0e7ff;
+  margin-left: 00%;
+}
+.check{color:#16a34a;font-weight:700;margin-right:.5rem}
