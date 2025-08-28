@@ -60,7 +60,7 @@ function Card({ id, title, body, selected, onClick }) {
               </ul>
             </div>
             <div className="bubble bubble--ai">
-              위 리스트 중 디파씨부랄이랑 약3은 저번에 가셨던 ‘남윤수의원’에서 처방 가능합니다.
+              위 리스트 중 디파어쩌고랑 약3은 저번에 가셨던 ‘남윤수의원’에서 처방 가능합니다.
             </div>
           </>
         );
