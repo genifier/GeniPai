@@ -33,7 +33,7 @@ img{display:block;max-width:100%}
 }
 
 /* 래퍼 */
-.container{max-width:var(--max-w);margin:0 auto;padding:0 20px}
+.container{max-width:var(--max-w);margin:0 auto;padding:0 min(20px,max(3px,5%))}
 
 /* 푸터 여백 */
 .spacer{height:40px}
